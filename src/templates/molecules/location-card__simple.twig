@@ -1,0 +1,36 @@
+<div class="location-card">
+
+    {#<div class="center">#}
+        {#<img src="assets/location-image.jpg" alt="{{ mainDoctor }} Office" class="location-card__office-image">#}
+    {#</div>#}
+
+    <div class="location-card__logo--wrapper">
+        <img  src="assets/smith-lori-logo-bottom.png" alt="{{ mainDoctor }}" class="location-card__logo">
+    </div>
+
+    <div class="location-card__content">
+
+        <h6 class="location-card__doctor">Lori Smith, <span class="location-card__doctor--title">DDS</span></h6>
+
+        {#<p class="location-card__doctor-sub">GENERAL & COSMETIC DENTIST</p>#}
+
+        <p class="location-card__address">13 South Coo-Y-Yah<br>Pryor OK 74361</p>
+
+        <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+            <h6 class="location-card__map-link underline">Click to view map & directions</h6>
+        </a>
+
+        {#<h5 class="location-card__welcoming-patients">Now Welcoming New Patients</h5>#}
+        <p class="location-card__new-patient-text">New Patient Hotline</p>
+        <a href="tel:{{ newPhone }}" class="location-card__new-patient-number">{{ newPhoneNoBreak }}</a>
+        <p class="location-card__existing-patient-text">Existing patients:
+            <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
+        </p>
+
+        {% include 'atoms/request-appointment-button.twig' with {
+            classes: "btn--style-two location-card__btn"
+        } %}
+
+        {% include 'atoms/hours-table.twig' %}
+    </div> 
+</div>

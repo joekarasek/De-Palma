@@ -1,0 +1,80 @@
+{
+  "team": [
+    {
+      "name": "Wendy",
+      "carousel": true,
+      "modalTarget": "wendy",
+      "image": "0-wendy.jpg",
+      "title": "Dental Assistant",
+      "text": [
+        "I have been working in the dental field since 1986 and thoroughly enjoy working with people and our wonderful dental team. The advanced technology in our office is what I love most as it allows us to provide the absolute best care for our patients. Dr. Calvin’s passion for dentistry is outstanding and our patients adore him for the care that he provides.",
+        "In my spare time, I enjoy Boston sports teams and going to games. I love traveling, spending time with my cat Leo and soaking up the sun in my happy place – the beach."
+      ]
+    },
+    {
+      "name": "Pam",
+      "carousel": true,
+      "modalTarget": "pam",
+      "image": "1-pam.jpg",
+      "title": "Dental Hygienist",
+      "text": [
+        "I joined the team in December 2016 and am qualified and registered with the New Hampshire Board of Dental Examiners to administer dental anesthesia. I have completed many post graduate courses involving periodontal disease, aesthetic and neuromuscular dentistry and am happy to share my knowledge with my patients. In my free time, I enjoy spending time with my family and taking my labordoodle, Bailey, on long walks."
+      ]
+    },
+    {
+      "name": "Melanie",
+      "carousel": true,
+      "modalTarget": "melanie",
+      "image": "2-melanie.jpg",
+      "title": "Treatment Coordinator",
+      "text": [
+        "Dr. Calvin and the rest of the team are a pleasure to work with and I am delighted to have been a part of this dental family since early 2016.",
+        "As the treatment coordinator, my highest priority is ensuring that every patient’s needs are met in a prompt and efficient manner. When not at the office, I love spending time with my husband and nine nieces & nephews, reading, running, hiking and practicing yoga."
+      ]
+    },
+    {
+      "name": "Lynne",
+      "carousel": true,
+      "modalTarget": "lynne",
+      "image": "3-lynne.jpg",
+      "title": "Dental Hygienist",
+      "text": [
+        "I obtained my Dental Hygiene Degree in 1977 from Middlesex Community College and joined Calvin Dental 15 years ago. I take pride in knowing my patients individually and providing high quality dental care in a relaxed and comfortable environment.",
+        "In my spare time I enjoy spending time with my grown children, granddaughter and large family at their beach house or in ski country."
+      ]
+    },
+    {
+      "name": "Julie",
+      "carousel": true,
+      "modalTarget": "julie",
+      "image": "4-julie.jpg",
+      "title": "Dental Hygienist",
+      "text": [
+        "I have been a team member at Calvin Dental since 2014 and am registered with the NH Dental Board to administer local anesthesia. I truly enjoy being a team member at Calvin Dental Associates where I get to form great relationships with my patients as I help them with their oral health.",
+        "I am originally from Michigan but have spent time living in California, Florida and Iowa. Outside of the office, I like to travel, attend hockey games with my family and work on home renovation projects."
+      ]
+    },
+    {
+      "name": "Deb",
+      "carousel": true,
+      "modalTarget": "deb",
+      "image": "5-deb.jpg",
+      "title": "Dental Assistant",
+      "text": [
+        "I have been a team member of Calvin Dental Associates since 2008 and obtained my assisting degree from NE School of Dental Assisting. I find enjoyment in getting to know my patients and meeting their individual needs while working with Dr. Calvin.",
+        "In my spare time, I enjoy traveling and spending time at the beach with my family and friends."
+      ]
+    },
+    {
+      "name": "Cheryl",
+      "carousel": true,
+      "modalTarget": "cheryl",
+      "image": "6-cheryl.jpg",
+      "title": "Receptionist",
+      "text": [
+        "I have been a receptionist and part of the Calvin Dental team since 2011. I enjoy interacting with our patients and making sure that every one is greeted with a warm welcome. I’m always available to answer patients’ questions and help them with their dental treatment planning.",
+        "In my time out of the office, I enjoy spending time with my husband, children and grandchildren."
+      ]
+    }
+  ]
+}

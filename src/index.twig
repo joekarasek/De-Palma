@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include '/organisms/head.twig' %}
+
+<body class="stretched">
+
+<!-- Document Wrapper
+============================================= -->
+<div id="wrapper" class="clearfix">
+
+    {% include 'organisms/header.twig' with
+    {
+    "transparent": false
+    }
+    %}
+
+    {% include 'organisms/marquee.twig' %}
+
+    <!-- Content
+  ============================================= -->
+
+    <div id="content" >
+
+        {% include 'molecules/cta__two-to-one.twig' with {
+            id: 'cta-one',
+            existingPatients: true
+        } %}
+
+        {% include 'organisms/about.twig' %}
+
+        {% include 'organisms/specials--three-card.twig' %}
+
+        {% include 'molecules/cta__two-to-one.twig' with {
+            id: 'cta-two',
+            existingPatients: false,
+            shadow: false,
+            classes: "cta--no-border"
+        } %}
+
+        {% include 'organisms/reviews.twig' %}
+
+        {% include 'organisms/insurance.twig' %}
+
+        {% include 'organisms/services.twig' %}
+
+        {% include 'organisms/smile-gallery.twig' %}
+
+        {% include 'organisms/tour.twig' %}
+        
+        {# {% include 'organisms/forms.twig' %} #}
+
+        {% include 'organisms/location.twig' %}
+
+    </div>
+
+    <!-- Modals
+    ============================================= -->
+    {% include 'organisms/request-modal.twig' %}
+
+    <!-- Footer
+    ============================================= -->
+    {% include 'organisms/footer.twig' %}
+
+</div><!-- #wrapper end -->
+
+{% include 'organisms/foot.twig' %}
+
+</body>
+</html>

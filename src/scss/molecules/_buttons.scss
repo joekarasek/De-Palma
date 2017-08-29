@@ -1,0 +1,63 @@
+a.btn,
+button.btn {
+  font-family: $ff-lato;
+  font-weight: 700 !important;
+  background-color: #ffa300;
+  color: #fff;
+  border-radius: 50px;
+  border: solid 3px #fff;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+
+  @include font-size(17px, 16px, 16px, 15px, 15px);
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#ffa300, 10%);
+    color: #fff;
+    //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  &.btn--style-two {
+    background: none;
+    background-color: #06b7d7;
+    border: solid 2px #fff;
+    font-family: $ff-lato;
+    //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+
+    @include font-size(16px, 16px, 15px, 14px, 13px);
+
+    &:hover,
+    &:focus {
+      background-color: darken(#06b7d7, 15%);
+      //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.d46);
+    }
+  }
+
+  &.btn--style-three {
+    background-image: none;
+    background-color: #4b382c;
+    color: #fff;
+    border-color: #06b7d7;
+    //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+
+    @include font-size(16px, 16px, 14px, 14px, 14px);
+
+    &:hover,
+    &:focus {
+      background-color: lighten(#4b382c, 10%);
+      //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.d46);
+    }
+  }
+
+  &.shadowed {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &.form-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+#section-reviews {
+  background-image: url('/assets/blue-pattern-bg.svg');
+  background-size: 100px !important;
+  background-repeat: repeat;
+  padding-bottom: 45px;
+  border-bottom: none;
+
+  .heading {
+    padding-top: 0;
+    text-align: center;
+    margin-top: $spacing-md;
+    margin-bottom: 30px;
+    color: #48392e;
+    font-weight: bold;
+    letter-spacing: 1.12px;
+    line-height: 1.2;
+    //text-shadow: 0 2px 4px rgba(230, 236, 255, 0.71);
+  }
+
+  .review-image {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .row--flexed {
+    @media (min-width: 768px) {
+      display: flex;
+
+      [id^="bf-revz-widget-"] {
+        height: 100%;
+      }
+
+      iframe {
+        height: 100%;
+      }
+    }
+  }
+
+  .mobile-image img {
+    width: 100%;
+  }
+
+  @include birdeye-footer(#4b382c, false);
+
+  .bf-spn {
+    font-family: $ff-lato;
+  }
+}

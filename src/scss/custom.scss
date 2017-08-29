@@ -1,0 +1,39 @@
+//=============================
+//      Custom Styles
+//=============================
+@import "globals/*";
+@import "atoms/*";
+@import "molecules/*";
+@import "organisms/*";
+
+//=============================
+//      Shame Styles
+//=============================
+
+.link-no-style:hover {
+  text-decoration: none !important;
+}
+
+.bf-pro:hover {
+  text-decoration: underline !important;
+}
+
+.mobile-break {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+
+a[data-target^="#team-"]:hover {
+  text-decoration: none;
+}
+
+.marquee img {
+  width: 100%;
+}
+
+iframe[src^="https://birdeye"] {
+  @media (max-width: 767px) {
+    max-height: 500px;
+  }
+}

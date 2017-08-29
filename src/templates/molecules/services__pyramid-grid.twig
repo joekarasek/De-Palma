@@ -1,0 +1,21 @@
+<!--services-additional-->
+<div class="services__pyramid-grid">
+    <div class="container-fluid">
+        <div class="row">
+            {% for index, service in services %}
+                    <div data-toggle="modal" data-target="#modal--{{ service.modalTarget }}" class="service-card {{ service.doubleWide ? 'col-sm-4 service-card--double' : 'col-sm-4 ' }}">
+                        <div class="service-card__image-link">
+                            <img src="assets/services/{{ service.image }}" alt="{{ service.title }}">
+                            <div class="service-card__copy">
+                                <h4 class="service-card__title allow-orphan {{ service.titleMobil ? 'hidden-xs hidden-sm' : '' }}">{{ service.title }}</h4>
+                                {% if service.titleMobil %}<h6 class="service-card__title {{ service.titleMobil ? 'hidden-lg hidden-md' : 'hidden' }}">{{ service.titleMobil }}</h6>{% endif %}
+                                <h6 class="services-plus service-card__learn-more">Learn More</h6>
+                                {#<img src="assets/service-icon.png" alt="Learn More Icon">#}
+                            </div>
+                        </div>
+                    </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>

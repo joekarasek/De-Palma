@@ -1,0 +1,90 @@
+{
+  "services":[
+    {
+      "doubleWide": false,
+      "featured": false,
+      "title": "Implant Dentistry",
+      "titleMobil": "Implant Dentistry",
+      "titleFull": "Implant Dentistry",
+      "image": "implant.jpg",
+      "modalTarget": "implant",
+      "text": ["Dental implants are a great option for replacing missing teeth, improving chewing ability, eliminating bridges, and replacing dentures.",
+        "Several implants may provide a base for a series of artificial teeth known as a fixed bridge. Implants can even be used to secure a full set of removable dentures for people who have no remaining natural teeth."]
+    },
+    {
+      "doubleWide": false,
+      "featured": false,
+      "title": "Composite Fillings",
+      "titleFull": "Composite Fillings",
+      "image": "composites.jpg",
+      "modalTarget": "composites",
+      "text": ["The common silver filling contains mercury. Dr. Smith uses the highest-quality biocompatible, tooth-colored restorations to create healthy, beautiful smiles.​ Since the composite material adheres directly to the tooth enamel, less preparation of the tooth is required before using it. This means it is more durable and provides a more natural-looking result."]
+    },
+    {
+      "doubleWide": false,
+      "featured": false,
+      "title": "Smile Whitening",
+      "titleFull": "Smile Whitening",
+      "image": "whitening.jpg",
+      "modalTarget": "whitening",
+      "text": ["Many everyday things like coffee, tea and wine can significantly dull teeth. Smile-whitening enables us to significantly brighten your smile for that dazzling white smile you deserve.",
+        "Plastic whitening trays will be made from models of your teeth. You will then place a special whitening gel in each tray and wear the trays in your mouth for several hours per day. (Many patients wear their trays after dinner and before bed.) A significant change in tooth color is usually seen in just four to six weeks."]
+    },
+    {
+      "doubleWide": false,
+      "featured": false,
+      "title": "Preventive Care",
+      "titleFull": "Prevention & Gum Care",
+      "image": "preventive.jpg",
+      "modalTarget": "preventive",
+      "text": ["By actively preventing disease and decay through regular home care, professional dental cleanings and regular exams, you will maintain a healthy, beautiful smile for life."]
+    },
+    {
+      "doubleWide": false,
+      "featured": false,
+      "title": "Sealants",
+      "titleFull": "Sealants",
+      "image": "sealants.jpg",
+      "modalTarget": "sealants",
+      "text": ["Normal pits and grooves on the chewing surfaces of back teeth can trap food that can’t easily be removed with brushing. A sealant is a tough tooth-colored material that is designed to bond to tooth enamel. These sealants are painted on to the tooth surface to seal these pits and grooves and protect against decay. We recommend applying these to children’s teeth once they have permanent back teeth in place. They can also be useful to adults in some situations."]
+    },
+    {
+      "doubleWide": false,
+      "featured": false,
+      "title": "Digital X-Rays",
+      "titleFull": "Digital X-Rays (or Digital Radiography)",
+      "image": "digital-xray.jpg",
+      "modalTarget": "xrays",
+      "text": ["Our use of digital x-ray technology reduces your radiation exposure and eliminates the use of chemicals. It’s better for you and the environment.",
+        "It's also easy for you to see what the doctor sees. Your digital x-ray can be seen on a computer screen located next to your dental chair. This helps you understand your needs and make informed choices about your treatment."]
+    },
+    {
+      "doubleWide": false,
+      "featured": true,
+      "title": "Smile Makeovers",
+      "titleFull": "Smile Makeovers",
+      "image": "cosmetic-mobile.jpg",
+      "modalTarget": "cosmetic",
+      "text": ["Cosmetic dentistry is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile will increase self-confidence and overall life satisfaction. Cosmetic dentistry includes things like tooth-colored restorations, dental implants, and crowns. We have many options, so please call us today!"]
+    },
+    {
+      "doubleWide": false,
+      "featured": true,
+      "title": "Sedation Dentistry",
+      "titleFull": "Sedation Dentistry",
+      "image": "sedation-mobile.jpg",
+      "modalTarget": "sedation",
+      "text": ["Sedation dentistry is an excellent treatment for patients with extensive dental needs, or who are concerned about anxiety, difficulty getting numb, or sensitive teeth."]
+    },
+    {
+      "doubleWide": false,
+      "featured": true,
+      "title": "Family Care",
+      "titleFull": "Care for the Family Care",
+      "image": "family-care-mobile.jpg",
+      "modalTarget": "care",
+      "text": ["From toddlers to the elderly, our skilled dental team is familiar with the unique needs of every patient, no matter their age. Our goal is to help them develop great oral habits that will last them a lifetime.",
+        "Join us today and discover how our practice can help treat your entire family."]
+    }
+  ]
+}

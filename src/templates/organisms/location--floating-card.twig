@@ -1,0 +1,66 @@
+<section id="section-location" class="content-section location">
+
+    <div class="floating-card">
+        <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 col-lg-5 col-md-push-6 col-lg-push-7 floating-card--col-fix">
+                <div class="location-card">
+
+                    <div class="location-card__logo--wrapper">
+                        <img  src="assets/kennedy-logo.svg" alt="{{ mainDoctor }}" class="location-card__logo">
+                    </div>
+
+                    <div class="location-card__content">
+                        <h4 class="location-card__doctor">Gerald Kennedy, DMD, MAGD</h4>
+                        <p class="location-card__doctor-sub">GENERAL & COSMETIC DENTIST</p>
+                        <p class="location-card__address">3506 N Lombard Street<br>Portland, OR 97217</p>
+                        <a href="{{ googleMap }}" target="_blank" class="link-no-style ">
+                            <h6 class="location-card__map-link underline">Click for Map and Directions</h6>
+                        </a>
+                        <p class="location-card__new-patient-text">New Patient Hotline</p>
+                        <a href="tel:{{ newPhone }}" class="location-card__new-patient-number">{{ newPhoneNoBreak }}</a>
+                        <a class="btn align-fix location-card__btn btn--style-two" data-toggle="modal" data-target="#requestAppointmentForm">Request an Appointment</a>
+                        <p class="location-card__existing-patient-text">Existing Patients Call</p>
+                        <a href="tel:{{ existingPhone }}" class="link-no-style location-card__existing-patient-number">{{ existingPhoneNoBreak }}</a>
+                        <div class="hours-table">
+                            <h5 class="t400">Hours</h5>
+                            <table >
+                                <tbody>
+                                <tr>
+                                    <th class="t400">Monday</th>
+                                    <td>8:00am - 5:00pm</td>
+                                </tr>
+                                <tr>
+                                    <th class="t400">Tuesday</th>
+                                    <td>8:00am - 5:00pm</td>
+                                </tr>
+                                <tr>
+                                    {#<th class="t400">Wednesday</th>#}
+                                    <td>8:00am - 5:00pm</td>
+                                </tr>
+                                <tr>
+                                    <th class="t400">Thursday</th>
+                                    <td>7:00am - 4:00pm</td>
+                                </tr>
+                                <tr>
+                                    <th class="t400">Closed</th>
+                                    <td>Friday - Sunday</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <a href="{{ googleMap }}" target="_blank"><div id="google-map5" class="gmap"></div></a>
+
+</section>

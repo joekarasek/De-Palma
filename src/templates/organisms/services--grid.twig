@@ -1,0 +1,52 @@
+<section id="section-services" class="services-grid__section-wrapper">
+    <div class="heading center">
+        <div class="container">
+            <h2 class="heading__title">Comprehensive Services</h2>
+            <p class="heading__byline">Click on a service below to learn more</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row--one services-grid">
+            <div data-toggle="modal"
+                 data-target="#modal--family"
+                 id="services-grid__family-dentistry"
+                 class="services-grid__item"></div>
+            <div data-toggle="modal"
+                 data-target="#modal--cerec"
+                 id="services-grid__cerec"
+                 class="services-grid__item"></div>
+        </div>
+        <div
+                class="row row--two services-grid">
+            <div data-toggle="modal"
+                 data-target="#modal--cosmetic"
+                 id="services-grid__cosmetic"
+                 class="services-grid__item hidden-sm hidden-md hidden-lg"></div>
+            <div data-toggle="modal"
+                 data-target="#modal--implants"
+                 id="services-grid__dental-implants"
+                 class="services-grid__item"></div>
+            <div data-toggle="modal"
+                 data-target="#modal--invisalign"
+                 id="services-grid__invisalign"
+                 class="services-grid__item"></div>
+            <div data-toggle="modal"
+                 data-target="#modal--dentures"
+                 id="services-grid__dentures"
+                 class="services-grid__item"></div>
+        </div>
+        <div
+                class="row row--three services-grid">
+            <div data-toggle="modal"
+                 data-target="#modal--sleep"
+                 id="services-grid__sleep"
+                 class="services-grid__item"></div>
+            <div data-toggle="modal"
+                 data-target="#modal--cosmetic"
+                 id="services-grid__cosmetic--two"
+                 class="services-grid__item hidden-xs"></div>
+        </div>
+    </div>
+    {% include 'molecules/services__modals.twig' %}
+</section>

@@ -1,0 +1,52 @@
+<section id="section-location" class="location location--three-column-classic">
+    <img src="assets/cloudy-sky_kerber.jpg" alt="blue sky with peaceful clouds">
+    <img src="assets/kerber-footer-logo.svg" alt="Kerber Pediatric Dentistry" class="hidden-md hidden-lg mobile-logo">
+    <div class="location__three-column-wrapper">
+        <div class="location__column location__column--one">
+            <h4 class="location__doctor">Lori Kerber, DDS</h4>
+            <h6 class="location__doctor-sub">Board-Certified Pediatric Dentist</h6>
+            <h5 class="location__address">2901 35th Street<br>Kenosha, WI 53140</h5>
+            <h5 class="location__map-link"><a href="{{ googleMap }}" target="_blank">Click for map &amp; directions</a></h5>
+            <h5 class="location__fax">Fax: (262) 658-3433</h5>
+        </div>
+        <div class="location__column location__column--two">
+            <img src="assets/kerber-footer-logo.svg" alt="Kerber Pediatric Dentistry" class="hidden-xs hidden-sm">
+            <h5 class="new-patient-text">New Patient Hotline</h5>
+            <h3 class="new-patient-phone"><a href="{{ newPhone }}">{{ newPhoneNoBreak }}</a></h3>
+            <div class="location__btn-wrapper hidden-md hidden-lg">{% include 'atoms/request-appointment-button.twig' %}</div>
+            <h5 class="existing-patient-text">Existing Patients Call</h5>
+            <h4 class="existing-patient-phone"><a href="{{ existingPhone }}">{{ existingPhoneNoBreak }}</a></h4>
+        </div>
+        <div class="location__column location__column--three">
+            <h3 class="location__hours-header">Office Hours</h3>
+            <table class="location__hours-table">
+                <tbody>
+                <tr>
+                    <th class="t400">Monday</th>
+                    <td class="hours-table__time">8:00am - 5:00pm</td>
+                </tr>
+                <tr>
+                    <th class="t400">Tuesday</th>
+                    <td class="hours-table__time">8:00am - 5:00pm</td>
+                </tr>
+                <tr>
+                    <th class="t400">Wednesday</th>
+                    <td class="hours-table__time">8:00am - 5:00pm</td>
+                </tr>
+                <tr>
+                    <th class="t400">Thursday</th>
+                    <td class="hours-table__time">8:00am - 5:00pm</td>
+                </tr>
+                <tr>
+                    <th class="t400">Friday</th>
+                    <td class="hours-table__time">Closed</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="location__btn-wrapper hidden-xs hidden-sm">
+        {% include 'atoms/request-appointment-button.twig' %}
+    </div>
+</section>
+{% include 'atoms/google-map.twig' %}

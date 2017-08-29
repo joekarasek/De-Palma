@@ -1,0 +1,33 @@
+{#
+    Call to Action Slab -- Request Appointments and Phone Number
+    @params existingPatients {bool} Adds Existing Patient text
+    @params classes {string} Adds classes to block
+    @params id {string} Adds id to block
+#}
+<div class="cta {{ classes ?: '' }}" {% if id %}id="{{ id }}"{% endif %}>
+    <div class="container center">
+        <div class="flex-wrapper">
+            {# item one #}
+            <div class="cta__new flex-wrapper__item">
+                <h5 class="cta__new-text allow-orphan">New Patient Hotline</h5>
+                <h2 class="cta__new-number allow-orphan">
+                    {% include 'atoms/new-patient-number.twig' %}
+                </h2>
+            </div>
+            
+            {# item two #}
+            <div class="vertical-break"></div>
+            {# item three #}
+            <div class="cta__btn flex-wrapper__item">
+                {% include 'atoms/request-appointment-button.twig' with {
+                    classes: "btn--style-two"
+                }%}
+            </div>
+        </div>
+        {% if existingPatients %}
+            {#The intention behind two paragraphs (one for mobile, one for desktop), is to accommodate Eric's design requests that the text change #}
+            <p class="cta__existing-patient hidden-md hidden-lg">Existing Patients<br> {% include 'atoms/existing-patient-number.twig' %}</p>
+            <p class="cta__existing-patient hidden-xs hidden-sm">Existing Patients:  {% include 'atoms/existing-patient-number.twig' %}</p>
+        {% endif %}
+    </div>
+</div>

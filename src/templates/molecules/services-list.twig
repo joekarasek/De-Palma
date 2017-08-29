@@ -1,0 +1,10 @@
+<ul class="service-list">
+    {% for service in services %}
+        <li class="service-list__item">
+            <a href="#" data-toggle="modal" data-target="#{{ service.modalTarget }}">
+                <i class="icon-ok-sign"></i>
+                <h5>{{ service.title }}</h5>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

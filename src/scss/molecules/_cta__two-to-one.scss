@@ -1,0 +1,128 @@
+/// Call to Action Two to One Layout
+.cta {
+  position: relative;
+  z-index: 100;
+  background-color: #4b382c;
+  background-position: center;
+  padding: 30px 0;
+  border-top: solid 2px #06b7d7;
+  border-bottom: solid 2px #06b7d7;
+
+  &.shadow {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  &--background-two {
+    background-color: #e4f3e9;
+  }
+
+  &--no-border {
+    border: none;
+  }
+
+  .flex-wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+
+      .vertical-break {
+        width: 1px;
+        height: 80px;
+        background-color: #fff;
+      }
+    }
+
+    .cta__new {
+      order: -2;
+    }
+
+    .cta__btn {
+      order: 2;
+    }
+
+    &__item {
+      padding: 10px 0;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        padding: 0 45px;
+        width: 49%;
+
+        &.cta__btn,
+        &.cta__new {
+          order: 0;
+        }
+
+        &:first-child {
+          text-align: right;
+        }
+
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__new {
+    &-text {
+      font-family: $ff-lato;
+      color: #cde9ef;
+      margin-bottom: 0;
+      font-weight: 400;
+
+      @include font-size(24px, 22px, 20px, 18px, 16px);
+    }
+
+    &-number {
+      color: #fff;
+      font-family: $ff-lato;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 5px 0 10px;
+      font-size: 36px;
+
+      a {
+        @include link-color(#fff);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  //&__btn {
+  //
+  //}
+
+  &__existing-patient {
+    color: #fff;
+    line-height: 1.7;
+    font-size: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.9;
+
+    @include font-size(20px, 20px, 16px, 14px, 14px);
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    .phone-number--existing {
+      @include link-color(#fff);
+      @include font-size(20px, 20px, 20px, 18px, 18px);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

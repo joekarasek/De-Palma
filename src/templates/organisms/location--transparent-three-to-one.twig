@@ -1,0 +1,61 @@
+<section id="section-location" class="content-section">
+
+    <div class="info--wrapper">
+        <div class="flex--wrapper">
+            <div class="info--text flex--item">
+                <h5 class="doctors">Jeffrey G. Priluck, DMD<br>Albert P. Nordone, DDS</h5>
+                <h5 class="address">5548 Chamblee Dunwoody Road<br>Dunwoody, GA 30338</h5>
+                <h6 class="info--map-link">
+                    <a href="https://www.google.com/maps/place/Dentistry+With+A+Difference/@33.950376,-84.3390487,17z/data=!3m1!4b1!4m5!3m4!1s0x88f50be9094f8a1d:0x84df6b46056b0de9!8m2!3d33.950376!4d-84.33686" target="_blank">Click for map & directions</a>
+                </h6>
+            </div>
+            <div class="info--number flex--item">
+                <p class="new-patient-text">NEW PATIENT HOTLINE</p>
+                <h2 class="new-patient-number"><a href="tel:{{ newPhone }}">{{ newPhoneNoBreak }}</a></h2>
+                <p class="existing-patient-text">Existing Patients: <a href="tel:1-770-901-2622" class="existing-patient-number">(770)&nbsp;901&#8209;2622</a></p>
+                <a href="#" class="btn" data-target="#requestAppointmentForm" data-toggle="modal">Request An Appointment</a>
+            </div>
+            <div class="info--hours flex--item">
+                <div class="hours-table">
+                    <h5 class="hours-table--title">Office Hours</h5>
+                    <table >
+                        <tbody>
+                        <tr>
+                            <th class="t400">Monday:</th>
+                            <td>7:00am - 5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th class="t400">Tuesday:</th>
+                            <td>7:00am - 5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th class="t400">Wednesday:</th>
+                            <td>7:00am - 5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th class="t400">Thursday:</th>
+                            <td>7:00am - 5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th class="t400">Friday:</th>
+                            <td>7:00am - 5:00pm</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> <!--End flex wrapper-->
+
+    <div class="map--wrapper">
+        <a href="https://www.google.com/maps/place/Dentistry+With+A+Difference/@33.950376,-84.3390487,17z/data=!3m1!4b1!4m5!3m4!1s0x88f50be9094f8a1d:0x84df6b46056b0de9!8m2!3d33.950376!4d-84.33686" target="_blank"><div id="google-map5" class="gmap"></div></a>
+    </div>
+
+    <div class="clearfix"></div>
+</section>
+
+{% include 'organisms/request-modal.twig' %}
+
+</div>
+
+</div><!-- #content end -->

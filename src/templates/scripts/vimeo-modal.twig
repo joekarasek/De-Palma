@@ -1,0 +1,9 @@
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var iframe = $('#vimeo-video');
+    var player = new Vimeo.Player(iframe);
+
+    $('#about-video').on('hidden.bs.modal', function () {
+        player.pause();
+    });
+</script>

@@ -1,0 +1,16 @@
+{#<div class="social-media-links">#}
+    {#{% for item in socialMediaLinks %}#}
+        {#<a href="{{ item.link }}" target="_blank" class="social-icon si-colored si-{{ item.media }}">#}
+            {#<i class="icon-{{ item.media }}"></i>#}
+            {#<i class="icon-{{ item.media }}"></i>#}
+        {#</a>#}
+    {#{% endfor %}#}
+{#</div>#}
+
+<div class="social-media-links">
+{% for item in socialMediaLinks %}
+<a href="{{ item.link }}" target="_blank" class="social-icon si-colored si-{{ item.media }}">
+            <img src="/assets/{{ item.media }}.png" class="custom-icon-{{ item.media }}" alt="social media link for {{ item.media }}">
+        </a>
+    {% endfor %}
+</div>

@@ -1,0 +1,52 @@
+<section id="section-location" class="location location--three-column">
+
+    <div class="container">
+        <div class="flex-wrapper">
+            <div class="column-one">
+
+                <!--Logo-->
+                <a href="#" class="standard-logo align-fix" data-scrollto="#header" data-offset="60">
+                    <img  src="assets/location_logo.svg" alt="{{ mainDoctor }}" class="location-card__logo">
+                </a>
+
+                <div class="doctors">
+                    <h5 class="doctors__main">Andrew E. Smith, <span class="doctors__main--title">DDS</span></h5>
+                    <h5 class="doctors__main">William C. Dowsett, <span class="doctors__main--title">DDS</span></h5>
+                    <p class="doctors__sub">GENERAL & COSMETIC DENTISTS</p>
+                </div>
+
+                <p class="address">{{ addressFirst }}<br>{{ addressLast }}</p>
+                <p class="map-link"><a href="{{ googleMap }}" target="_blank">Click for map &amp; directions</a></p>
+
+                <div class="hours-table">
+                    <table >
+                        <tbody>
+                        <tr>
+                            <th class="t400">Mon-Tues</th>
+                            <td class="hours-table__time">7:00am - 4:00pm</td>
+                        </tr>
+                        <tr>
+                            <th class="t400">Wed-Thurs</th>
+                            <td class="hours-table__time">8:00am - 5:00pm</td>
+                        </tr>
+                        <tr>
+                            <th class="t400">Friday</th>
+                            <td class="hours-table__time">Closed</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column-two">
+                <p class="new-patient-text">New Patient Hotline</p>
+                <h3><a href="tel:{{ newPhone }}" class="link-no-style new-patient-number">{{ newPhoneNoBreak }}</a></h3>
+
+                <p class="existing-patient-text">Existing Patients Call:<br><a href="tel:{{ existingPhone }}" class="link-no-style existing-patient-number">{{ existingPhoneNoBreak }}</a></p>
+
+                <a class="btn align-fix location-card__btn" data-toggle="modal" data-target="#requestAppointmentForm">Request Appointment</a>
+
+            </div>
+            {% include 'atoms/google-map.twig' %}
+        </div>
+    </div>
+</section>

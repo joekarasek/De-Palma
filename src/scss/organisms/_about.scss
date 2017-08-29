@@ -1,0 +1,59 @@
+#section-about {
+  background-image: none;
+
+  .about__title {
+    margin-bottom: 0;
+    font-family: $ff-dancing;
+    color: #4b382c;
+    padding-top: 30px;
+    font-weight: 400;
+
+    @include font-size(60px, 55px, 50px, 48px, 48px);
+
+    @media (min-width: 991px) {
+      padding-top: 50px;
+    }
+  }
+
+  .about__doctor {
+    color: #0491ab;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1;
+
+    @include font-size(42px, 36px, 34px, 36px, 36px);
+
+    &--title {
+      color: #0491ab;
+      font-size: 35px;
+    }
+  }
+
+  p {
+    &.about__copy {
+      margin-top: 30px;
+
+      &--last {
+        @media (min-width: 991px) {
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 550px) {
+    .about-mobile-image {
+      max-width: 400px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .about-main-bg {
+      padding: 30px 0;
+      background-image: url(/assets/lori-bio.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top left;
+    }
+  }
+}
