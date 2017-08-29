@@ -1,7 +1,7 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #4b382c;
+  background-color: #609b1b;
   border-top: none;
 
   a {
@@ -10,10 +10,11 @@
 
   p {
     font-weight: 400;
-    font-family: $ff-lato;
+    font-family: $ff-droid;
     font-size: 14px;
     line-height: 1.7;
     color: #fff;
+    font-style: italic;
 
     @media screen and (max-width: $width-md) {
       float: none;
@@ -59,7 +60,7 @@
   .flex--wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     @media (max-width: $width-sm) {
