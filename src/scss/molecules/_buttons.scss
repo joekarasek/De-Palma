@@ -1,13 +1,13 @@
 a.btn,
 button.btn {
-  font-family: $ff-lato;
-  font-weight: 700 !important;
+  font-family: $ff-work;
+  // font-weight: 700 !important;
   background-color: #ffa300;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 16px;
   border: solid 3px #fff;
   padding: 10px 50px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
 
   @include font-size(17px, 16px, 16px, 15px, 15px);
@@ -39,9 +39,9 @@ button.btn {
 
   &.btn--style-three {
     background-image: none;
-    background-color: #4b382c;
-    color: #fff;
-    border-color: #06b7d7;
+    background-color: #fff;
+    color: #609b1b;
+    border-color: #609b1b;
     //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
 
     @include font-size(16px, 16px, 14px, 14px, 14px);
