@@ -1,19 +1,13 @@
 #section-forms {
-  background-image: url('/assets/blue-pattern-bg.svg');
-  background-size: 100px !important;
-  background-repeat: repeat;
-  padding-top: 45px;
-  border-top: solid 2px #fff;
-  border-bottom: solid 2px #fff;
+  background-color: #f1f4ed;
+  padding-top: 5px;
 
   .heading {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 15px;
 
     &__title {
-      font-weight: 700px;
-      color: #4b382c;
+      color: #609b1b;
       line-height: 1;
       padding-bottom: 0;
       padding-top: 10px;
@@ -27,17 +21,17 @@
 
   .forms {
     &__byline {
-      color: #424242;
-      font-size: 18px;
-      padding-bottom: 15px;
+      color: #4e4e4e;
+      font-style: italic;
+      font-family: $ff-droid;
+      padding-top: 5px;
+
+      @include font-size(24px, 24px, 24px, 21px, 21px);
     }
 
     &__copy {
-      color: #3e3e3e;
-
-      &a:hover {
-        color: #3e3e3e;
-      }
+      color: #4e4e4e;
+      font-style: italic;
     }
 
     &__btn-wrapper {
@@ -45,10 +39,20 @@
     }
   }
 
+  .acrobat {
+    text-decoration: underline !important;
+
+    @include link-color(#4e4e4e);
+
+    &:hover {
+      color: #609b1b;
+    }
+  }
+
   .btn {
     margin: 10px 0;
     padding: 10px 20px;
-    width: 270px;
+    // width: 270px;
   }
 
   .line-break {
@@ -57,7 +61,7 @@
 
   @media (min-width: 768px) {
     .btn {
-      width: 360px;
+      // width: 360px;
       margin-left: 15px;
       margin-right: 15px;
     }
