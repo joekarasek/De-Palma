@@ -2,11 +2,12 @@
 .cta {
   position: relative;
   z-index: 100;
-  background-color: #4b382c;
+  background-color: #374a8a;
   background-position: center;
   padding: 30px 0;
-  border-top: solid 2px #06b7d7;
-  border-bottom: solid 2px #06b7d7;
+  font-style: italic;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 
   &.shadow {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
@@ -32,8 +33,8 @@
       align-items: center;
 
       .vertical-break {
-        width: 1px;
-        height: 80px;
+        width: 2px;
+        height: 70px;
         background-color: #fff;
       }
     }
@@ -72,22 +73,20 @@
 
   &__new {
     &-text {
-      font-family: $ff-lato;
-      color: #cde9ef;
+      font-family: $ff-droid;
+      color: #fff;
       margin-bottom: 0;
       font-weight: 400;
-
-      @include font-size(24px, 22px, 20px, 18px, 16px);
     }
 
     &-number {
       color: #fff;
-      font-family: $ff-lato;
+      font-family: $ff-work;
+      font-style: normal;
       font-weight: 900;
       line-height: 1;
       margin-bottom: 0;
       padding: 5px 0 10px;
-      font-size: 36px;
 
       a {
         @include link-color(#fff);

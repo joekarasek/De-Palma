@@ -87,7 +87,7 @@ h1 {
 
 @mixin h2() {
   @include headings();
-  @include font-size(48px, 36px, 34px, 36px, 30px);
+  @include font-size(48px, 36px, 33px, 36px, 30px);
 }
 
 .h2,

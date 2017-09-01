@@ -22,29 +22,36 @@
 
     <div id="content" >
 
-        {# {% include 'molecules/cta__two-to-one.twig' with {
-            id: 'cta-one',
-            existingPatients: true
-        } %} #}
-
         {# {% include 'organisms/about.twig' %} #}
 
-        {# {% include 'organisms/specials--three-card.twig' %} #}
-
-        {# {% include 'molecules/cta__two-to-one.twig' with {
+         {% include 'molecules/cta__two-to-one.twig' with {
             id: 'cta-two',
-            existingPatients: false,
+            existingPatients: true,
             shadow: false,
             classes: "cta--no-border"
-        } %} #}
+        } %}
 
-        {# {% include 'organisms/reviews.twig' %} #}
+        {% include 'organisms/specials--three-card.twig' %}
+
+        {% include 'molecules/cta__two-to-one.twig' with {
+            id: 'cta-one',
+            existingPatients: false
+        } %}
+
+        {% include 'organisms/reviews.twig' %}
 
         {# {% include 'organisms/insurance.twig' %} #}
 
         {# {% include 'organisms/services.twig' %} #}
 
         {# {% include 'organisms/smile-gallery.twig' %} #}
+
+        {% include 'molecules/cta__two-to-one.twig' with {
+            id: 'cta-three',
+            existingPatients: true,
+            shadow: false,
+            classes: "cta--no-border"
+        } %}
 
         {% include 'organisms/forms.twig' %}
         
