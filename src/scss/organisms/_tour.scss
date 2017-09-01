@@ -1,10 +1,7 @@
 .tour {
-  background-image: url(/assets/tour-bg.jpg);
-  background-size: cover;
-  background-position: top center;
-  color: #fff;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  background-color: #f7f7f7;
+  padding-top: 15px;
+  padding-bottom: 65px;
   position: relative;
 
   .owl-carousel .owl-nav [class*=owl-],
@@ -16,35 +13,16 @@
     margin-bottom: 25px;
 
     &__title {
-      color: #4b382c;
-      margin-bottom: 10px;
-      font-weight: 700;
+      font-family: $ff-work;
+      color: #374a8a;
+      margin-bottom: 5px;
     }
 
     &__copy {
-      line-height: 1.5;
+      font-family: $ff-droid;
+      color: #4e4e4e;
+      font-style: italic;
     }
-  }
-
-  &__video-wrapper {
-    padding: 30px 15px;
-
-    @media (min-width: 768px) {
-      padding: 30px 45px;
-    }
-
-    @media (min-width: 768px) {
-      padding: 45px 60px;
-    }
-  }
-
-  .full-width-wrapper {
-    position: relative;
-  }
-
-  &--full-width,
-  .owl-carousel {
-    position: static !important;
   }
 
   .owl-nav {
@@ -57,39 +35,13 @@
   }
 
   img {
-    max-height: 187px !important;
     width: auto !important;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 16px;
   }
 
-  @media (min-width: 550px) {
-    img {
-      max-height: 293px !important;
-    }
-  }
-
-  @media (min-width: 768px) {
-    img {
-      max-height: 480px !important;
-    }
-  }
-
-  @media (min-width: 992px) {
-    img {
-      max-height: 627px !important;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    img {
-      max-height: 667px !important;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .container {
-      width: inherit !important;
-    }
+  .owl-item {
+    padding: 0  40px;
   }
 }
