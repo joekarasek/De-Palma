@@ -3,20 +3,26 @@
 #google-map5,
 .google-map iframe {
   height: 200px !important;
+  border-radius: 16px;
+  overflow: hidden;
 
   @media (min-width: $width-xs) {
     height: 250px !important;
   }
 
   @media (min-width: $width-sm) {
-    height: 888px !important;
+    height: 250px !important;
   }
 
   @media (min-width: $width-md) {
-    height: 888px !important;
+    height: 250px !important;
   }
 
   @media (min-width: $width-lg) {
-    height: 888px !important;
+    height: 250px !important;
   }
+}
+
+#google-map5 > div {
+  border-radius: 16px;
 }

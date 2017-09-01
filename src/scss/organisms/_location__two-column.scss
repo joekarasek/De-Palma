@@ -1,11 +1,17 @@
 #section-location {
-  // padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.location__team {
+  border-radius: 16px;
+  margin-bottom: 25px;
 }
 
 .location.location__two-column {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 
   .location__map,
   .location__card--wrapper {

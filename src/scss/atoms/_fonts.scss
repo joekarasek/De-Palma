@@ -18,7 +18,7 @@ p {
 
 /// @group typography
 @mixin headings() {
-  line-height: 1.5;
+  line-height: 1.1;
 }
 
 h1,
@@ -28,7 +28,7 @@ h4,
 h5,
 h6 {
   color: #000;
-  font-family: $ff-lato;
+  font-family: $ff-work;
   font-weight: 400;
   //letter-spacing: -1.5px;
 }
@@ -93,7 +93,7 @@ h1 {
 .h2,
 h2 {
   text-transform: none;
-  font-weight: 700;
+  font-weight: 900;
 
   @include h2();
 
@@ -123,10 +123,10 @@ h4 {
 }
 
 @mixin h5() {
-  font-weight: 400;
+  font-weight: 700;
 
   @include headings();
-  @include font-size(24px, 23px, 23px, 24px, 23px);
+  @include font-size(21px, 21px, 21px, 20px, 20px);
 }
 
 .h5,
