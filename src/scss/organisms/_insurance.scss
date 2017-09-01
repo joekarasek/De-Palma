@@ -1,34 +1,41 @@
 #section-insurance {
-  $c-no-insurance: #06b7d7;
-  $c-sub-header: #4b382c;
-  $c-preventative: #303030;
-  $c-copy: #303030;
-  $c-mobile-bg: #fff;
+  $c-no-insurance: #2a3869;
+  $c-sub-header: #374a8a;
+  $c-preventative: #609b1b;
+  $c-copy: #4e4e4e;
+  $c-mobile-bg: #f1f4ed;
 
-  text-align: right;
-  background-color: #fff;
-  position: relative;
+  text-align: left;
+  background-color: #f1f4ed;
+  // position: relative;
+  padding: 50px 0;
+  font-style: italic;
+  font-family: $ff-droid;
+
+  .alignCenter {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
   .title {
-    letter-spacing: 0;
-    font-family: $ff-dancing;
-    font-weight: 400;
+    font-family: $ff-work;
+    font-weight: 900;
     margin-bottom: 0;
     line-height: 1;
     color: $c-no-insurance;
-    padding: 15px 0;
+    // padding: 10px 0;
+    font-style: normal;
 
-    @include font-size(106px, 106px, 70px, 70px, 55px);
+    @include font-size(60px, 56px, 52px, 50px, 40px);
   }
 
   .sub-title {
     font-weight: 400;
     color: $c-sub-header;
     margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 1.7px;
-
-    @include font-size(33px, 33px, 24px, 25px, 20px);
+    font-family: $ff-droid;
   }
 
   .preventative-care {
@@ -38,6 +45,7 @@
     letter-spacing: -0.24px;
     padding: 20px 0;
     margin-bottom: 0;
+    font-family: $ff-droid;
 
     @include font-size(37px, 35px, 24px, 30px, 23px);
   }
@@ -60,23 +68,6 @@
     }
   }
 
-  .insurance__image {
-    @media (min-width: 768px) {
-      padding-top: 70px;
-      max-height: 450px;
-    }
-
-    @media (min-width: 992px) {
-      padding-top: 70px;
-      max-height: 500px;
-    }
-
-    @media (min-width: 1200px) {
-      padding-top: 50px;
-      max-height: 550px;
-    }
-  }
-
   .btn {
     margin-top: 20px;
     padding-top: 10px;
@@ -88,18 +79,5 @@
   //Fix for insurance background on mobile
   .mobile-insurance-fix {
     display: none;
-  }
-
-  .flexbox-wrapper {
-    text-align: left;
-
-    @media (min-width: 768px) {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
   }
 }

@@ -35,8 +35,8 @@
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-services-carousel--two', {
     items: 1,
-    // loop: true,
-    autoplay: false,
+    loop: true,
+    autoplay: true,
     autoplaySpeed: 500,
     autoplayTimeout: 2000,
     autoplayHoverPause:false,
