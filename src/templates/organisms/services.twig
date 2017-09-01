@@ -1,35 +1,52 @@
 <section id="section-services">
-
-    <div class="heading">
+    <div class="service-slab">
         <div class="container">
-            <h2 class="heading__title">Our Services</h2>
-            {#<h4 class="heading__byline">Learn more about our treatments and services.</h4>#}
-            <p class="heading__copy">By actively preventing disease and decay through regular home care, professional
-                dental cleanings and regular exams, we’ll partner with you to maintain your healthy, beautiful smile.
-                Prevention is always better than treatment, so if it’s been a while since you’ve seen a dentist, please
-                give us a call&nbsp;or&nbsp;<a href="#" data-target="#requestAppointmentForm" data-toggle="modal">click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment.</a></p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="service-slab__heading">Cosmetic Dentistry</h2>
+                    <p class="service-slab__byline">Get the smile you deserve</p>
+                    <p class="service-slab__copy">Cosmetic dentistry is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile will increase self-confidence and overall life satisfaction. Cosmetic dentistry includes things like tooth-colored restorations, dental implants, and crowns.</p>
+                    <a href="/assets/noneGiven" target="_blank" class="btn btn--style-two service-slab__btn">Learn More</a>
+                </div>
+                <div class="col-sm-6">
+                    <img src="/assets/cosmeticFeatureAsImage.png" alt="Cosmetic Feature Video">
+                </div>
+            </div>
         </div>
     </div>
-
-    {% include 'molecules/services__carousel.twig' %}
+    <div class="service-slab service-slab__two">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="/assets/services/dentures.jpg" alt="Cosmetic Dentures" class="service-slab__img">
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="service-slab__heading">Cosmetic Dentures</h2>
+                    <p class="service-slab__byline">Replace missing arch and restore function</p>
+                    <p class="service-slab__copy">A well made denture is not only comfortable and functions properly; it also allows the wearer to smile with confidence, knowing that their smile is no different than it would be with natural teeth. Creating a cosmetic denture is really an art in the hands of skilled dentists like Drs. Michael & Errin DePalma.</p>
+                    <a href="/assets/noneGiven" target="_blank" class="btn btn--style-two">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="services-part-two">
         <div class="heading">
             <div class="container">
-                <h2 class="heading__title">More Services</h2>
-                <p class="heading__copy">Select a link below to learn more.</p>
+                <h2 class="heading__title">Many Services One Location</h2>
+                <p class="heading__copy">Click on a service below to learn more</p>
             </div>
         </div>
 
-        <div class="services-second-carousel full-width-wrapper hidden-xs">
-            <div class="container full-width">
+        <div class="services-second-carousel  hidden-xs">
+            <div class="container">
                 <div class="owl-carousel js-services-carousel--two">
                     {% for service in services %}
                         <div class="services-carousel__item">
                             <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="Service Image"></div></a>
                             <div class="services-carousel__title">
                                 <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h5>{{ service.title }}</h5></a>
-                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h6>Learn More</h6></a>
+                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h6>Click to Learn More</h6></a>
                             </div>
                         </div>
                     {% endfor %}
@@ -37,15 +54,15 @@
             </div>
         </div>
 
-        <div class="services-second-carousel--mobile full-width-wrapper hidden-sm hidden-md hidden-lg">
-            <div class="container full-width">
+        <div class="services-second-carousel--mobile  hidden-sm hidden-md hidden-lg">
+            <div class="container">
                 <div class="owl-carousel js-services-carousel--two-mobile">
                     {% for service in services if not service.featured %}
                         <div class="services-carousel__item">
                             <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="Service Image"></div></a>
                             <div class="services-carousel__title">
                                 <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h5>{{ service.title }}</h5></a>
-                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h6>Learn More</h6></a>
+                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h6>Click to Learn More</h6></a>
                             </div>
                         </div>
                     {% endfor %}

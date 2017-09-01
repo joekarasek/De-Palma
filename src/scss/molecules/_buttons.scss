@@ -24,15 +24,16 @@ button.btn {
 
   &.btn--style-two {
     background: none;
-    background-color: #06b7d7;
-    border: solid 2px #fff;
-    font-family: $ff-lato;
+    background-color: #fff;
+    color: #374a8a;
+    border: solid 2px #374a8a;
+    font-family: $ff-work;
 
     @include font-size(16px, 16px, 15px, 14px, 13px);
 
     &:hover,
     &:focus {
-      background-color: darken(#06b7d7, 15%);
+      background-color: lighten(#374a8a, 45%);
     }
   }
 

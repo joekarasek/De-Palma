@@ -8,7 +8,6 @@
   }
 
   .heading {
-    background-color: #7b6353;
     text-align: center;
 
     &__title {
@@ -19,13 +18,44 @@
     }
 
     &__copy {
-      color: #fff;
-      margin-top: 20px;
-      margin-bottom: 45px;
+      color: #2c395b;
+      font-style: italic;
+      margin-bottom: 5px;
 
-      a {
-        color: #e8fbff;
-        text-decoration: underline !important;
+      @include font-size(24px, 24px, 22px, 20px, 16px);
+    }
+  }
+
+  .service-slab {
+    padding: 60px 0;
+
+    &__heading {
+      color: #374a8a;
+      margin-bottom: 0;
+    }
+
+    &__byline {
+      font-style: italic;
+      margin-bottom: 10px;
+
+      @include font-size(24px, 24px, 22px, 20px, 16px);
+    }
+
+    &__copy {
+      color: #4e4e4e;
+    }
+
+    &__two {
+      background-color: #f7f7f7;
+    }
+
+    &__img {
+      border-radius: 16px;
+    }
+
+    &__btn {
+      @media (max-width: 767px) {
+        margin-bottom: 15px;
       }
     }
   }
@@ -44,8 +74,7 @@
     }
 
     &__title {
-      color: #4b382c;
-      font-family: $ff-dancing;
+      color: #374a8a;
       padding-left: 30px;
       margin-bottom: 0;
       line-height: 1.2;
@@ -94,7 +123,7 @@
     }
 
     &__title {
-      color: #4b382c;
+      color: #374a8a;
       font-family: $ff-dancing;
       padding-left: 30px;
       margin-bottom: 0;
@@ -136,37 +165,36 @@
   }
 
   .services-part-two {
-    padding: 15px 0 60px;
-    background-image: url(/assets/brown-pattern.svg);
-    background-repeat: repeat;
-    background-size: 100px;
+    padding: 15px 0 40px;
 
     .heading {
       background: none;
 
       &__title {
-        color: #36c4de;
+        color: #374a8a;
       }
     }
   }
 
   .services-carousel {
     position: relative;
+
+    &--image {
+      img {
+        border-radius: 16px;
+      }
+    }
   }
 
   .services-carousel__item {
     position: relative;
 
     .services-carousel__title {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: rgba(255, 255, 255, 0.8);
       padding: 10px 15px;
+      text-align: center;
 
       h5 {
-        color: #412e1f;
+        color: #499e00;
         margin-bottom: 5px;
         line-height: 1;
 
@@ -174,10 +202,9 @@
       }
 
       h6 {
-        color: #07b7d7;
+        color: #919499;
         line-height: 1;
         margin-bottom: 0;
-        text-decoration: underline !important;
       }
     }
   }

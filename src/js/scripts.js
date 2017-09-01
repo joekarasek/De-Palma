@@ -28,22 +28,22 @@
     items: 1,
     margin: 40,
     navText: [
-      '<img src="assets/services-left.png">',
-      '<img src="assets/services-right.png">'
+      '<img src="assets/tour-left.png">',
+      '<img src="assets/tour-right.png">'
     ],
     autoHeight: true
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-services-carousel--two', {
     items: 1,
-    loop: true,
-    autoplay: true,
+    // loop: true,
+    autoplay: false,
     autoplaySpeed: 500,
     autoplayTimeout: 2000,
     autoplayHoverPause:false,
     autoWidth: false,
     navText: [
-      '<img src="assets/services-left.png">',
-      '<img src="assets/services-right.png">'
+      '<img src="assets/tour-left.png">',
+      '<img src="assets/tour-right.png">'
     ],
     dots: false,
     margin: 30,
@@ -56,7 +56,7 @@
         items: 3
       },
       992: {
-        items: 4
+        items: 3
       },
       1200: {
         items: 3
@@ -72,8 +72,8 @@
     autoplayHoverPause:false,
     autoWidth: false,
     navText: [
-      '<img src="assets/services-left.png">',
-      '<img src="assets/services-right.png">'
+      '<img src="assets/tour-left.png">',
+      '<img src="assets/tour-right.png">'
     ],
     dots: false,
     margin: 30,
@@ -86,7 +86,7 @@
         items: 3
       },
       992: {
-        items: 4
+        items: 3
       }
     }
   });
@@ -132,7 +132,7 @@
   HelloWorldDevsTysonSteele.updateCopyright('.js-copyright-year');
 
   // ======= Google Maps =======
-  HelloWorldDevsTysonSteele.googleMap('#google-map5', '36.3054821,-95.3133126', '36.3054821,-95.3133126');
+  HelloWorldDevsTysonSteele.googleMap('#google-map5', '38.3285054,-75.2106448', '38.3285054,-75.2106448');
 
   $('#gallery-btn').click( function(e) {
     e.preventDefault();
