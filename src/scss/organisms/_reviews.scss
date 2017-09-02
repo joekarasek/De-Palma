@@ -2,17 +2,25 @@
   background-image: url('/assets/reviewsBG.jpg');
   padding-bottom: 45px;
   border-bottom: none;
+  font-style: italic;
 
   .heading {
     padding-top: 0;
     text-align: center;
     margin-top: $spacing-md;
-    margin-bottom: 30px;
-    color: #48392e;
-    font-weight: bold;
+    margin-bottom: 0;
+    color: #374a8a;
+    font-weight: 900;
     letter-spacing: 1.12px;
     line-height: 1.2;
-    //text-shadow: 0 2px 4px rgba(230, 236, 255, 0.71);
+    font-style: normal;
+
+    &__byline {
+      font-family: $ff-droid;
+      padding-bottom: 20px;
+
+      @include font-size(24px, 18px, 17px, 18px, 16px);
+    }
   }
 
   .review-image {
@@ -41,9 +49,9 @@
     width: 100%;
   }
 
-  @include birdeye-footer(#4b382c, false);
+  @include birdeye-footer(#fff, false);
 
   .bf-spn {
-    font-family: $ff-lato;
+    font-family: $ff-droid;
   }
 }
