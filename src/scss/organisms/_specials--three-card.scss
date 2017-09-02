@@ -3,41 +3,44 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
+
+  .specials__title-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    margin-bottom: 15px;
+  }
 
   .heading {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 
     @include font-size(36px, 34px, 34px, 34px, 32px);
 
     &__title {
       margin-bottom: 5px;
       line-height: 1;
-      color: #fff;
+      color: #609b1b;
+      padding-top: 15px;
     }
 
     &__sub-title {
-      color: #000;
-      font-size: 14px;
       font-style: italic;
-      margin-bottom: 15px;
       padding-top: 10px;
-      padding-bottom: 10px;
     }
 
     &__byline {
-      color: #fff681;
-      font-weight: 400;
-      line-height: 1;
-      margin-bottom: 5px;
+      color: #374a8a;
+      font-weight: 700;
+      margin-bottom: 1px;
+      font-style: italic;
+      font-family: $ff-droid;
     }
   }
 
   .specials__card-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     @media (max-width: 991px) {
       flex-direction: column;
@@ -51,26 +54,22 @@
 
   .specials-card {
     text-align: center;
-    width: 30%;
+    width: 33.3%;
     position: relative;
-    border-radius: 0;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
+    // margin: 5px;
+    font-style: italic;
+    color: #fff;
 
-    &__top {
-      border-bottom: 5px solid rgba(0, 0, 0, 0);
+    &__new {
       padding-top: 25px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
+      margin-bottom: 0;
+      font-family: $ff-droid;
+      color: #fff;
 
-    &__bottom {
-      background-color: rgba(255, 255, 255, 0.85);
-      margin-top: 0;
-      padding-top: 80px;
-      padding-left: 20px;
-      padding-right: 20px;
-      flex-grow: 1;
+      @include font-size(24px, 20px, 19px, 20px, 18px);
     }
 
     &__cost {
@@ -82,50 +81,47 @@
       margin-left: auto;
       margin-right: auto;
       width: 165px;
-      height: 125px;
-      // border: solid 7px white;
-      // border-radius: 50%;
-      color: white;
+      height: 115px;
       font-weight: 700;
-      font-family: $ff-open;
-      font-size: 84px;
+      // font-family: $ff-open;
+      font-size: 72px;
       font-style: normal;
+      color: #fff;
 
       &::before {
         content: '$';
         position: absolute;
-        font-size: 36px;
-        left: 24px;
-        top: 17px;
-        font-family: $ff-lato;
+        font-size: 30px;
+        left: 30px;
+        top: 25px;
         font-weight: 400;
       }
     }
 
     &__savings {
       margin-top: 5px;
-      font-family: $ff-lato;
+      padding: 60px 0 0;
     }
 
     &__title {
-      font-family: $ff-lato;
       color: #fff;
-      font-weight: 700;
-      line-height: 1.1;
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 900;
     }
 
     &__copy {
-      color: #000;
-      font-family: $ff-lato;
+      color: #fff;
       line-height: 1.4;
       margin-bottom: 70px;
       font-size: 17px;
+      padding: 0 15px;
     }
 
     &__codes {
       padding-top: 30px;
-      color: #575757;
+      color: #fff;
       font-size: 14px;
       // margin-bottom: 65px;
       position: absolute;
@@ -135,44 +131,38 @@
     }
 
     &:nth-child(1) {
-      .specials-card__top {
-        background-color: rgba(7, 113, 198, 0.8);
-      }
-
-      .specials-card__cost {
-        background-color: #044f7e;
-      }
+      background-color: rgba(14, 79, 143, 0.6);
 
       .specials-card__savings {
-        color: #044f7e;
+        color: #fff;
+      }
+
+      @media (min-width: 992px) {
+        margin-left: -15px;
       }
     }
 
     &:nth-child(2) {
-      .specials-card__top {
-        background-color: rgba(0, 191, 200, 0.8);
-      }
-
-      .specials-card__cost {
-        background-color: #00bfc8;
-      }
+      background-color: rgba(69, 116, 10, 0.6);
 
       .specials-card__savings {
-        color: #0577b1;
+        color: #fff;
+      }
+
+      @media (min-width: 992px) {
+        margin: 0 20px;
       }
     }
 
     &:nth-child(3) {
-      .specials-card__top {
-        background-color: rgba(214, 96, 24, 0.8);
-      }
-
-      .specials-card__cost {
-        background-color: #af4c0d;
-      }
+      background-color: rgba(4, 18, 71, 0.6);
 
       .specials-card__savings {
-        color: #af4c0d;
+        color: #fff;
+      }
+
+      @media (min-width: 992px) {
+        margin-right: -15px;
       }
     }
   }
