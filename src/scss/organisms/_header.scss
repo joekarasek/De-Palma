@@ -1,7 +1,7 @@
 #header.full-header {
-  $c-header: #e8fbff;
+  $c-header: #fff;
   $c-menu-trigger: #2f1d0f;
-  $nav-font: $ff-lato;
+  $nav-font: $ff-droid;
 
   width: 100%;
   height: 100px;
@@ -9,20 +9,20 @@
   &--transparent {
     position: absolute;
 
-    @media screen and (max-width: $width-md) {
-      position: relative;
-      border-bottom: #06b7d7 2px solid;
-    }
+    // @media screen and (max-width: $width-md) {
+    //   position: relative;
+    //   border-bottom: #06b7d7 2px solid;
+    // }
   }
 
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
 
-    @include nav-color(#2f1d0f, 400);
-    @include nav-color(#066ed7, 700, 1);
-    @include nav-color(#0457ab, 700, 2);
-    @include nav-color(#05869e, 700, 3);
+    @include nav-color(#4e4e4e, 400);
+    @include nav-color(#ed5803, 700, 1);
+    @include nav-color(#374a8a, 700, 2);
+    @include nav-color(#212a49, 700, 3);
   }
 
   #primary-menu-trigger {
@@ -37,10 +37,10 @@
     // background-image: url(/assets/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    border-bottom: #06b7d7 2px solid;
+    // border-bottom: #06b7d7 2px solid;
 
     @media screen and (max-width: $width-md) {
-      background-color: #e8fbff;
+      background-color: #fff;
     }
   }
 
@@ -61,14 +61,14 @@
   #logo img {
     padding: 2px;
     // padding-left: 5px;
-    max-width: 240px;
+    max-width: 360px;
   }
 
   @media screen and (max-width: $width-md) {
     #logo {
       a {
         text-align: right;
-        margin-left: 30px;
+        // margin-left: 30px;
         margin-right: auto;
         padding-right: 30px;
       }
@@ -83,7 +83,7 @@
     #primary-menu-trigger {
       right: 10px;
       left: auto;
-      color: #343b42;
+      padding-top: 10px;
     }
   }
 
@@ -102,12 +102,11 @@
 
   #primary-menu ul li {
     @media screen and (max-width: $width-md) {
-      border-top: 1px solid #06b7d7;
-      background-color: #e8fbff;
+      background-color: #fff;
       padding-left: 30px;
 
       &:last-child {
-        border-bottom: 1px solid #06b7d7;
+        // border-bottom: 1px solid #06b7d7;
       }
     }
   }
@@ -118,7 +117,7 @@
     padding: 0 5px;
     text-transform: none;
     transition: padding 0.3s ease;
-    font-family: $ff-lato;
+    font-family: $ff-droid;
 
     &:hover {
       text-decoration: underline !important;
