@@ -22,7 +22,7 @@
 
     <div id="content" >
 
-        {# {% include 'organisms/about.twig' %} #}
+        {% include 'organisms/about.twig' %}
 
          {% include 'molecules/cta__two-to-one.twig' with {
             id: 'cta-two',
@@ -30,6 +30,8 @@
             shadow: false,
             classes: "cta--no-border"
         } %}
+
+        {% include 'molecules/team__carousel.twig' %}
 
         {% include 'organisms/specials--three-card.twig' %}
 

@@ -1,21 +1,81 @@
 <section id="section-about" class="clearfix about">
     {# creates BG and padding for content #}
-    <div class="about-main-bg">
-        {# the next 3 divs are bootstrap's layout #}
+    <div class="about__doctor--one">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-md-push-5">
-                    {# this is content #}
-                    <h2 class="about__title">Meet the Doctor</h2>
-                    <h3 class="about__doctor">Lori Smith, <span class="about__doctor--title">DDS</span></h3>
-                    {# this is the mobile and tablet image (only shows then) #}
-                    <div class="center">
-                        <img src="/assets/lori-mobile-bio.jpg" alt="{{ mainDoctor }}" class="about-mobile-image hidden-md hidden-lg">
-                    </div>
-                    <p class="about__copy">By combining advanced clinical dentistry with a fun, friendly style, Dr. Smith and her team will make you and your family more comfortable than you ever thought possible. Each year Dr. Smith participates in extensive postdoctoral studies from the nation’s foremost clinicians, who provide some of the latest advances in dental technology and the most effective materials available. So whether you’re looking for advanced cosmetic restorations, or simply a place to help maintain your family’s oral health, we’ll give you something to smile about!</p>
-                    <p class="about__copy about__copy--last">A native of Oklahoma, Dr. Smith earned her doctorate from the University of Oklahoma College of Dentistry. She and her husband, Lawrence, have been married for 16 years and love spending family time with their twins, Maggie and Bryson. They are active in their church and the local community.</p>
-                </div>
+            <div class="row center">
+                <h2 class="about__title">Meet the Doctors</h2>
+                <p class="about__byline">Berlin’s trusted choice in Dental Care</p>
             </div>
+            
+            <div class="row alignCenter imgMargin">
+                <div class="col-sm-6 hidden-xs"><img src="/assets/team/mike-bio.png" alt="Michael DePalma, DDS"></div>
+                <div class="col-sm-6">
+                    <p class="about__doctor--title hidden-xs">GENERAL DENTIST</p>
+                    <h3 class="about__doctor hidden-xs">Michael DePalma, DDS</h3>
+                    <h3 class="about__doctor-two hidden-sm hidden-md hidden-lg">Michael DePalma, DDS</h3>
+                    <p class="about__doctor--title-two hidden-sm hidden-md hidden-lg">GENERAL DENTIST</p>
+                    <img src="/assets/team/mike-bio.png" alt="Michael DePalma, DDS" class="hidden-sm hidden-md hidden-lg">
+                    <p class="about__copy">The minute you walk through the door at DePalma Dental, you will know you’ve come to the right place. Dr. Michael DePalma and his dental team will make you more comfortable than you ever thought possible, so come visit us soon!</p>
+                    <p class="about__copy">Dr. Mike received his dental degree from the University of Maryland School of Dentistry, 
+                    <!-- Button trigger modal -->
+                        <a class="btn-link" data-toggle="modal" data-target="#mikeModal">READ MORE</a>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="mikeModal" tabindex="-1" role="dialog" aria-labelledby="mikeModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times</span></button>
+                                    <h4 class="modal-title" id="mikeModalLabel">Michael DePalma, DDS</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p> and each year, he continues to study advanced postgraduate dentistry with some of the most well-known clinicians in the country. He has attended the Shatkin, California, and Engle Implant Institutes, and comprehensive Invisalign® training to provide comprehensive restorative and aesthetic treatments for you and your family.</p>
+
+                                    <p>In his spare time, Dr. Mike enjoys spending time with his family at the beach, fishing, golf and he coaches kids basketball.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about__copy about__copy--last">“I love helping patients achieve a great smile and the best oral health possible.”  – Dr. Michael DePalma</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        {# the next 3 divs are bootstrap's layout #}
+    
+   
+        {# the next 3 divs are bootstrap's layout #}
+    <div class="container">
+        <div class="row alignCenter imgMargin">
+            <div class="col-sm-6">
+                <p class="about__doctor--title hidden-xs">GENERAL DENTIST</p>
+                <h3 class="about__doctor hidden-xs">Errin DePalma, DDS</h3>
+                <h3 class="about__doctor-two hidden-sm hidden-md hidden-lg">Errin DePalma, DDS</h3>
+                <p class="about__doctor--title-two hidden-sm hidden-md hidden-lg">GENERAL DENTIST</p>
+                <img src="/assets/team/errin-bio.png" alt="Erin DePalma, DDS" class="hidden-sm hidden-md hidden-lg">
+                <p class="about__copy">Dr. Errin DePalma looks forward to meeting you and your family. She believes in building lasting relationships with her patients and their families and providing the the kind of personalized care we’d expect for our own family.</p>
+                <p class="about__copy">Dr. Errin received her dental degree at the University of Maryland School of Dentistry along with her husband, and she continues her learning at the Frank Spear Education center which provides world-class training for dentists committed to excellence in clinical dentistry. 
+                <!-- Button trigger modal -->
+                    <a class="btn-link" data-toggle="modal" data-target="#errinModal">READ MORE</a>
+                </p>
+                <!-- Modal -->
+                <div class="modal fade" id="errinModal" tabindex="-1" role="dialog" aria-labelledby="errinModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times</span></button>
+                                <h4 class="modal-title" id="errinModalLabel">Errin DePalma, DDS</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p> In her spare time, Dr. Errin enjoys taking her children to the beach with her husband. She enjoys paddle boarding and yoga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="about__copy about__copy--last">“Dentistry is about people. We provide our patients the best dental care using the most advanced technology.” 						 – Dr. Errin DePalma</p>
+            </div>
+            <div class="col-sm-6 hidden-xs"><img src="/assets/team/errin-bio.png" alt="Erin DePalma, DDS"></div>
         </div>
     </div>
 
@@ -23,4 +83,3 @@
     {% include 'molecules/associations__carousel.twig' %}
 
 </section>
-

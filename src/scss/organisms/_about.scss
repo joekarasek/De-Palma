@@ -1,59 +1,78 @@
 #section-about {
   background-image: none;
 
-  .about__title {
-    margin-bottom: 0;
-    font-family: $ff-dancing;
-    color: #4b382c;
-    padding-top: 30px;
-    font-weight: 400;
+  .about {
+    &__title {
+      margin-bottom: 0;
+      color: #374a8a;
+      padding-top: 30px;
 
-    @include font-size(60px, 55px, 50px, 48px, 48px);
+      @media (min-width: 991px) {
+        padding-top: 50px;
+      }
+    }
 
-    @media (min-width: 991px) {
-      padding-top: 50px;
+    &__byline {
+      font-style: italic;
+      margin-bottom: 0;
+
+      @include font-size(26px, 18px, 16px, 18px, 16px);
     }
   }
 
+  .imgMargin {
+    margin: 40px 0;
+  }
+
+  .alignCenter {
+    display: flex;
+    align-items: center;
+  }
+
   .about__doctor {
-    color: #0491ab;
-    font-weight: 700;
-    font-size: 42px;
+    color: #609b1b;
+    font-weight: 900;
     line-height: 1;
 
-    @include font-size(42px, 36px, 34px, 36px, 36px);
+    &--one {
+      background-color: #f7f7f7;
+    }
+
+    &-two {
+      text-align: center;
+      margin-bottom: 0;
+      color: #609b1b;
+      font-weight: 900;
+    }
 
     &--title {
-      color: #0491ab;
-      font-size: 35px;
+      color: #919499;
+      margin-bottom: 0;
+      font-family: $ff-work;
+
+      &-two {
+        text-align: center;
+        color: #919499;
+        margin-bottom: 0;
+        font-family: $ff-work;
+      }
     }
   }
 
   p {
     &.about__copy {
       margin-top: 30px;
+      color: #4e4e4e;
 
       &--last {
-        @media (min-width: 991px) {
-          padding-bottom: 50px;
-        }
+        color: #609b1b;
+        font-style: italic;
       }
     }
   }
 
-  @media (min-width: 550px) {
-    .about-mobile-image {
-      max-width: 400px;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .about-main-bg {
-      padding: 30px 0;
-      background-image: url(/assets/lori-bio.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: top left;
-    }
+  .btn-link {
+    text-decoration: underline !important;
+    color: #2a3869 !important;
   }
 }
