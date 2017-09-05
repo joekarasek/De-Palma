@@ -1,5 +1,39 @@
 .team-carousel {
+  background-color: #f1f4ed;
+  padding: 35px 0;
+
+  &__heading {
+    &__title {
+      color: #374a8a;
+      margin: 0;
+    }
+
+    &__byline {
+      font-style: italic;
+      padding-bottom: 20px;
+
+      @include font-size(26px, 18px, 16px, 18px, 16px);
+    }
+  }
+
   .owl-carousel .owl-nav [class*=owl-] {
     top: 35%;
+  }
+
+  .owl-carousel .owl-nav [class*=owl-],
+  .owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+  }
+}
+
+#section-team {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .owl-carousel {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

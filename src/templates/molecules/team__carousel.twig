@@ -1,8 +1,20 @@
-<div class="team-carousel">
-    <div class="container">
-        <div class="owl-carousel js-team-carousel">
-            {% include 'molecules/team__cards.twig' %}
+<section id="section-team">
+    <div class="team-carousel">
+        <div class="team-carousel__heading center">
+            <h2 class="team-carousel__heading__title">
+                Our Excellent Team
+            </h2>
+            <p class="team-carousel__heading__byline">
+                We look forward to exceeding your expectations
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousel js-team-carousel">
+                    {% include 'molecules/team__cards.twig' %}
+                </div>
+            </div>
         </div>
     </div>
-</div>
-{% include 'molecules/team__modals.twig' %}
+    {% include 'molecules/team__modals.twig' %} 
+</section>

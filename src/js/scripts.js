@@ -118,16 +118,27 @@
   HelloWorldDevsTysonSteele.pyramidCarousel('.js-team-carousel', {
     items: 1,
     autoplay: true,
+    autoplayHoverPause:false,
     navText: [
-      '<img src="assets/arrow-left.png">',
-      '<img src="assets/right-arrow.png">'
+      '<img src="assets/tour-left.png">',
+      '<img src="assets/tour-right.png">'
     ],
     responsive: {
       550: {
         items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      },
+      1200: {
+        items: 5,
+        autoplay: true
       }
     },
-    margin: 30
+    margin: 0,
   });
   HelloWorldDevsTysonSteele.updateCopyright('.js-copyright-year');
 
