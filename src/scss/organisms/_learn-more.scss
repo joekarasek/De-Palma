@@ -1,0 +1,22 @@
+#section-learn-more {
+  padding: 60px 0;
+
+  .learn-more {
+    &__title {
+      margin-bottom: 0;
+      color: #374a8a;
+    }
+
+    &__byline {
+      font-style: italic;
+      margin-bottom: 0;
+      padding: 10px 20px 30px;
+    }
+  }
+
+  .mobilePadding {
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
