@@ -10,9 +10,9 @@
   "addressFirst" : "500 Franklin Avenue",
   "addressLast" : "Berlin, MD 21811",
   "birdeye" : "4076240005",
-  "birdeyeScript" : "https://birdeye.com/embed/v4/147144830655567/3/4076240005",
-  "insuranceLink" : "https://lori-smith-dds.illumitrac.com/#programs",
-  "googleMap" : "https://www.google.com/maps/place/Lori+Smith,+DDS/@36.3054821,-95.3133126,15z/data=!4m5!3m4!1s0x0:0x33337d90e21225d9!8m2!3d36.3054821!4d-95.3133126",
+  "birdeyeScript" : "",
+  "insuranceLink" : "",
+  "googleMap" : "https://www.google.com/maps/place/Depalma+Dental/@38.3285054,-75.2106448,16.99z/data=!4m5!3m4!1s0x0:0xc274b33aab372d8d!8m2!3d38.328709!4d-75.209787",
   "socialMediaLinks": [
     {
       "media": "facebook",

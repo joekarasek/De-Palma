@@ -16,7 +16,7 @@ button.btn {
 
   &:hover,
   &:focus {
-    background-color: lighten(#ffa300, 10%);
+    background-color: darken(#ff843d, 10%);
     color: #fff;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -33,7 +33,7 @@ button.btn {
 
     &:hover,
     &:focus {
-      background-color: lighten(#374a8a, 45%);
+      background-color: darken(#fff, 10%);
     }
   }
 
@@ -47,7 +47,7 @@ button.btn {
 
     &:hover,
     &:focus {
-      background-color: lighten(#609b1b, 55%);
+      background-color: darken(#fff, 5%);
     }
   }
 

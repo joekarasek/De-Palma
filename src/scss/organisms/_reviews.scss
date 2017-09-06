@@ -1,5 +1,6 @@
 #section-reviews {
   background-image: url('/assets/reviewsBG.jpg');
+  background-size: cover;
   padding-bottom: 45px;
   border-bottom: none;
   font-style: italic;
@@ -18,6 +19,7 @@
     &__byline {
       font-family: $ff-droid;
       padding-bottom: 20px;
+      color: #212a49;
 
       @include font-size(24px, 18px, 17px, 18px, 16px);
     }

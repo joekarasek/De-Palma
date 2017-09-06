@@ -29,6 +29,13 @@
   .service-slab {
     padding: 60px 0;
 
+    @media (min-width: 768px) {
+      .row {
+        display: flex;
+        align-items: center;
+      }
+    }
+
     &__heading {
       color: #374a8a;
       margin-bottom: 0;
@@ -37,6 +44,7 @@
     &__byline {
       font-style: italic;
       margin-bottom: 10px;
+      color: #212a49;
 
       @include font-size(24px, 24px, 22px, 20px, 16px);
     }
@@ -56,6 +64,14 @@
     &__btn {
       @media (max-width: 767px) {
         margin-bottom: 15px;
+      }
+
+      &--two {
+        background-color: #f7f7f7;
+
+        &:hover {
+          background-color: darken(#f7f7f7, 5%);
+        }
       }
     }
   }
@@ -207,5 +223,9 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  .owl-carousel {
+    padding: 5px 30px;
   }
 }

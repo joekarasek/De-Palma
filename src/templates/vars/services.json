@@ -19,13 +19,14 @@
       "image": "apnea.jpg",
       "modalTarget": "apnea",
       "text": ["Obstructive sleep apnea occurs when the airway completely collapses, blocking airflow into the lungs. The harder one tries to breathe, the tighter the airway seals. This airway obstruction persists until the brain partially awakens the person, unconsciously closing the jaw and returning the tongue and throat to a normal position.",
-      "We offer effective, nonsurgical relief from sleep apnea and other sleep-related disorders—including snoring. Ask us how you can get the restful, healthy sleep you’ve been missing."]
+      "We offer effective, nonsurgical relief from sleep apnea and other sleep-related disorders, including snoring. Ask us how you can get the restful, healthy sleep you’ve been missing."]
     },
     {
       "doubleWide": false,
       "featured": false,
       "title": "One Visit Crowns",
       "titleFull": "One Visit Crowns",
+      "titleMobil": "Crowns",
       "image": "cerec.jpg",
       "modalTarget": "cerec",
       "text": ["CEREC® technology allows our practice to create tooth-colored porcelain restorations for healthy, beautiful smiles in a single appointment.",
@@ -65,7 +66,7 @@
       "featured": true,
       "title": "Cosmetic Dentistry",
       "titleFull": "Cosmetic Dentistry",
-      "image": "dentures.jpg",
+      "image": "all-on-4.jpg",
       "modalTarget": "dentistry",
       "text": ["Cosmetic dentistry is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile will increase self-confidence and overall life satisfaction. Cosmetic dentistry includes things like tooth-colored restorations, dental implants, and crowns."]
     }

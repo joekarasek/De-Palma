@@ -11,6 +11,7 @@
     &__byline {
       font-style: italic;
       padding-bottom: 20px;
+      color: #212a49;
 
       @include font-size(26px, 18px, 16px, 18px, 16px);
     }
