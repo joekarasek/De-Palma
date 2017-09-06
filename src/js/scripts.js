@@ -14,7 +14,7 @@
     speed: 500
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 10000,
     items: 1,
     margin: 40,
@@ -22,7 +22,7 @@
       '<img src="assets/tour-left.png">',
       '<img src="assets/tour-right.png">'
     ],
-    autoHeight: true
+    autoHeight: false
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-services-carousel', {
     items: 1,
