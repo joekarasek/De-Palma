@@ -86,3 +86,77 @@
     position: relative;
   }
 }
+
+#section-nav {
+  padding: 45px 0 35px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      z-index: 10;
+    }
+
+    .card__copy--one {
+      background-color: #62a6f2;
+    }
+
+    &:hover .card__copy--one {
+      background-color: #387ac5;
+    }
+
+    .card__copy--two {
+      background-color: #609b1b;
+    }
+
+    &:hover .card__copy--two {
+      background-color: #4c7e12;
+    }
+
+    .card__copy--three {
+      background-color: #374a8a;
+    }
+
+    &:hover .card__copy--three {
+      background-color: #1e2d60;
+    }
+
+    &__copy {
+      text-align: center;
+      margin-top: -20px;
+      padding: 30px 5px 2px;
+      border-radius: 15px;
+      max-width: 330px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      color: #fff;
+      font-weight: 700;
+      font-family: $ff-work;
+
+      @include font-size(32px, 26px, 32px, 28px, 22px);
+    }
+
+    &__sub-title {
+      color: #f7f7f7;
+      font-weight: 700;
+      font-style: italic;
+      font-family: $ff-droid;
+
+      @include font-size(20px, 17px, 20px, 20px, 16px);
+    }
+
+    &__click-here {
+      font-family: $ff-work;
+      color: #f7f7f7;
+      margin: 12px 0 3px;
+
+      @include font-size(18px, 15px, 18px, 20px, 20px);
+    }
+  }
+}
