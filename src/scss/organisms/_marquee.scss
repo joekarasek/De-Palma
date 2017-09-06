@@ -1,128 +1,80 @@
-#slider {
-  height: 36.45833vw !important;
+#section-marquee {
+  position: relative;
 
-  .swiper-slide {
-    > img {
-      width: 100%;
+  .main {
+    background-image: url(/assets/slide/slide1.jpg);
+    background-size: cover;
+
+    &__content {
+      padding: 30px 0 45px;
     }
 
-    .container {
-      height: 100%;
+    &__image {
+      padding-bottom: 20px;
     }
 
-    .row {
-      transform: translateY(-50%);
-      top: 50%;
-      position: relative;
-    }
-  }
-
-  .slide1 {
-    display: flex;
-    align-content: center;
-
-    .slide__title {
-      color: #4b382c;
-      font-family: $ff-dancing;
-      line-height: 0.8;
-      font-weight: 400;
-      margin-bottom: 0;
-      text-align: left;
-
-      @include font-size(90px, 70px);
-
-      &-family {
-        padding-left: 25px;
-        color: #0491ab;
-        font-family: $ff-lato;
-        font-weight: 900;
-
-        @include font-size(77px, 56px);
-      }
-    }
-
-    .slide__copy {
-      color: #4b382c;
-      line-height: 1;
-      font-family: $ff-lato;
-      text-transform: uppercase;
-
-      @include font-size(25px, 23px, 20px, 20px, 18px);
-    }
-  }
-
-  .slide2 {
-    font-family: $ff-lato;
-
-    .slide__title {
-      font-weight: 400 !important;
-      color: #4b382c;
-      margin-bottom: 0;
-      line-height: 1;
-      text-transform: uppercase;
-
-      @include font-size(35px, 30px);
-    }
-
-    .stars {
-      padding-top: 20px;
-      padding-bottom: 25px;
-    }
-
-    .copy {
-      color: #454545;
-      margin-bottom: 25px;
-      padding-right: 45px;
-      line-height: 1.4;
-
-      @include font-size(28px, 25px, 20px, 18px, 17px);
-    }
-  }
-
-  .slide3 {
-    .title--no-insure {
-      font-weight: 400;
-      color: #06b7d7;
+    &__welcoming {
+      color: #fff;
+      font-family: $ff-droid;
+      font-weight: 700;
+      font-style: italic;
       margin-bottom: 5px;
       line-height: 1;
-      font-family: $ff-dancing;
+      text-shadow: 0 0 12px #417505;
 
-      @include font-size(120px, 110px, 55px);
+      @include font-size(21px, 21px);
     }
 
-    .title--sub {
-      text-transform: uppercase;
-      letter-spacing: 1.7px;
-      color: #4b382c;
-      line-height: 1;
+    &__new-patient-number {
+      color: #fff;
+      font-family: $ff-work;
+      font-weight: 800;
       margin-bottom: 10px;
-
-      @include font-size(33px, 25px, 32px);
-    }
-
-    .preventative-copy {
-      color: #303030;
       line-height: 1;
-      padding-top: 10px;
+      text-shadow: 0 0 12px #417505;
 
-      @include font-size(37px, 31px);
+      @include font-size(38px, 38px);
     }
 
-    .btn {
-      @include lr-padding(80px, 60px, 60px);
+    &__request-appt {
+      margin: 10px 0;
+    }
+
+    &__existing-patients,
+    &__existing-patients-number {
+      color: #fff;
+      font-family: $ff-droid;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 5px;
+      line-height: 1;
+      text-shadow: 0 0 12px #417505;
+
+      @include font-size(19px, 19px);
     }
   }
 
-  .icon-star3 {
-    color: $c-star;
+  .aside {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+
+    &__copy {
+      color: #919499;
+      font-family: $ff-droid;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1.4;
+
+      @include font-size(20px, 20px);
+    }
   }
 
-  .slide-content {
+  .doctor-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
+    max-width: 45%;
+    max-height: 550px;
   }
 }
 
@@ -133,8 +85,4 @@
     display: block;
     position: relative;
   }
-}
-
-.swiper_wrapper {
-  height: auto;
 }
