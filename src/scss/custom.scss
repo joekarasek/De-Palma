@@ -37,3 +37,8 @@ iframe[src^="https://birdeye"] {
     max-height: 500px;
   }
 }
+
+.owl-carousel .owl-item img[src="assets/team/kris.jpg"] {
+  height: 100%;
+  width: auto;
+}
