@@ -14,7 +14,7 @@
     speed: 500
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 10000,
     items: 1,
     margin: 40,
@@ -22,7 +22,6 @@
       '<img src="assets/tour-left.png">',
       '<img src="assets/tour-right.png">'
     ],
-    autoHeight: false
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-services-carousel', {
     items: 1,
@@ -148,6 +147,33 @@
   $('#gallery-btn').click( function(e) {
     e.preventDefault();
     $('#gallery-target').click();
+  });
+
+  // Fix for menu scroll to links. Offsets are needed for desktop but not tablet or mobile.
+  // ======================================================================================
+
+  // Store Menu Offests for reset on screen resize reset
+  var menuOffsets = [];
+  $('#primary-menu').find('a').each(function(index) {
+    menuOffsets.push($(this).attr('data-offset'));
+  });
+
+  // kills menu offsets for tablet and mobile on load
+  if ($(window).width() < 993) {
+    $('#primary-menu').find('a').attr('data-offset', '0');
+  }
+
+  // Fix scrollTo offsets on tablet and mobile versions (sets data offsets to zero)
+  $(window).resize(function() {
+    if ($(window).width() < 993) {
+      // sets all menu offset to zero for mobile
+      $('#primary-menu').find('a').attr('data-offset', '0');
+    } else {
+      // resets all menu offsets to origin value
+      $('#primary-menu').find('a').each(function(index) {
+        $(this).attr('data-offset', menuOffsets[index]);
+      });
+    }
   });
 
 }(jQuery, HelloWorldDevsTysonSteele));

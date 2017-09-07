@@ -4,6 +4,12 @@
     <a href="#" data-scrollto="#section-about" data-offset="0">
         <img src="assets/slide/mobile-slide.jpg" style="width:100%;height:auto;" alt="{{ mainDoctor }}">
     </a>
+    {% include 'molecules/cta__two-to-one.twig' with {
+    id: 'cta-four',
+    existingPatients: true,
+    shadow: false,
+    classes: "cta--no-border hidden-lg hidden-md"
+    } %}
     <div class="aside">
         <div class="container">
             <div class="row">
@@ -34,18 +40,19 @@
             </div>
         </div>
         {% include 'atoms/down-arrow.twig' %}
+        <img src="/assets/slide/mike-errin-clipped.png" alt="Drs. Michael and Errin DePalma" class="doctor-image">
     </div>
     <div class="aside">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-lg-7">
                     <h5 class="aside__copy">Our approach is centered around each patient’s individual dental needs, with
                         your overall&nbsp;health&nbsp;in&nbsp;mind.</h5>
                 </div>
             </div>
+            <img src="/assets/slide/mike-errin-clipped.png" alt="Drs. Michael and Errin DePalma" class="doctor-image doctor-image--large-screen">
         </div>
     </div>
-    <img src="/assets/slide/mike-errin-clipped.png" alt="Drs. Michael and Errin DePalma" class="doctor-image">
 </section>
 <section id="section-nav">
     <div class="container">

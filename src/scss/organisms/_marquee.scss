@@ -1,9 +1,16 @@
 #section-marquee {
-  position: relative;
+  @media (min-width: 1100px) {
+    position: relative;
+  }
 
   .main {
     background-image: url(/assets/slide/slide1.jpg);
     background-size: cover;
+    position: relative;
+
+    @media (min-width: 1100px) {
+      position: static;
+    }
 
     &__content {
       padding: 30px 0 45px;
@@ -56,7 +63,23 @@
 
   .aside {
     background-color: #f7f7f7;
-    padding: 30px 0;
+    text-align: center;
+
+    .container {
+      position: relative;
+    }
+
+    @media (min-width: 1100px) {
+      text-align: left;
+
+      .col-lg-7 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 58.33333333%;
+      }
+    }
 
     &__copy {
       color: #919499;
@@ -64,6 +87,7 @@
       font-weight: 700;
       font-style: italic;
       line-height: 1.4;
+      padding: 30px 0;
 
       @include font-size(20px, 20px);
     }
@@ -74,7 +98,23 @@
     bottom: 0;
     right: 0;
     max-width: 45%;
-    max-height: 550px;
+    max-height: 470px;
+
+    @media (min-width: 1100px) {
+      max-height: 550px;
+    }
+
+    &--large-screen {
+      display: none;
+    }
+
+    @media (min-width: 1550px) {
+      display: none;
+
+      &--large-screen {
+        display: inline-block;
+      }
+    }
   }
 }
 
